@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&display=swap');
+
+
+
+:root{
+  --purple:#7988f4;
+  --white:#fff;
+  --black:#161616;
+  --grey:#635f5f;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--black);
+}
+
+
+
+body{
+  width: 100%;
+ 
+  height: 100vh;
+  background: var(--white);
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.main{
+
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+ padding: 1rem 4.5rem;
+}
+.profile-img img{
+  max-width: 11rem;
+  max-height: 11rem;
+  border-radius: 40rem;
+}
+.name h1{
+  padding-top: 1.5rem ;
+color: var(--black);
+font-size: 2.4rem;
+font-family: "Inter" ;
+font-weight: 700;
+letter-spacing: -.1rem;
+ 
+ 
+}
+.name ul{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem 0;
+  align-items: flex-start;
+  
+}
+.name ul li{
+  text-align: left;
+  color: var(--grey);
+  font-size: 1.3rem;
+font-weight: 400;
+list-style: none;
+}
+.myself{
+  padding-top: 5rem;
+}
+.btn{
+  font-family: 'Inter';
+  color: white;
+  outline: none;
+  border: 0;
+  border-radius: .2rem;
+cursor: pointer;
+  padding: .6rem 1.5rem;
+  background-color: var(--purple);
+  transition:all .2s ease-in ;
+}
+.btn:hover{
+  background-color: #8892de;
+  padding: .6rem 1.8rem;
+}
