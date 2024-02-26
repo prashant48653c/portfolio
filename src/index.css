@@ -24,7 +24,8 @@ body{
   width: 100%;
  
   height: 100vh;
-  background: var(--white);
+  /* background: var(--white); */
+ 
 }
 img{
   max-width: 100%;
@@ -38,14 +39,59 @@ img{
   display: flex;
   width: 100%;
   height: 100vh;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 4rem;
  padding: 1rem 4.5rem;
 }
-.profile-img img{
-  max-width: 11rem;
-  max-height: 11rem;
-  border-radius: 40rem;
+.profile-img{
+  display: flex;
+  border: .6rem solid rgb(232, 227, 227);
+  border-radius: 50rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ width: 13rem;
+ height: 13rem;
+
 }
+.p-image{
+ z-index: 1;
+ border-radius: 40rem;
+}
+.badge{
+  position: absolute;
+  top: 80%;
+  z-index: 111;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: .3rem solid #eee;
+ 
+  border-radius: 30rem;
+   font-size: 1.5rem;
+  left: 80%;
+  
+  
+ 
+  
+}
+.btn-resume{
+  margin-left: 1rem;
+  background: #bba8e8;
+  font-family: 'Inter';
+  color:white;
+  outline: none;
+  border: 0;
+  border-radius: .2rem;
+cursor: pointer;  
+  padding: .6rem 1.5rem;
+ 
+  transition:all .2s ease-in ;
+}
+.btn-resume:hover{
+  background: #aca9f7;
+ 
+}
+
 .name h1{
   padding-top: 1.5rem ;
 color: var(--black);
@@ -56,6 +102,7 @@ letter-spacing: -.1rem;
  
  
 }
+
 .name ul{
   display: flex;
   flex-direction: column;
@@ -72,7 +119,7 @@ font-weight: 400;
 list-style: none;
 }
 .myself{
-  padding-top: 5rem;
+ max-width: 100%;
 }
 .btn{
   font-family: 'Inter';
@@ -88,4 +135,56 @@ cursor: pointer;
 .btn:hover{
   background-color: #8892de;
   padding: .6rem 1.8rem;
+}
+.about-section{
+  border: 1px solid black;
+width: 30%;
+display: flex;
+justify-content: center;
+}
+
+/* Modes styling  */
+.mode-btns{
+  margin: 2rem 0;
+  display: flex;
+  gap: .5rem;
+  
+}
+.mode-btn{
+  padding:.2rem .5rem;
+}
+
+/* description styling  */
+
+.description{
+  width: 70%;
+  border: 1px solid black;
+}
+.d-boxs{
+  width: 100%;
+}
+.d-boxs h4{
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.d-box h6{
+  font-size: 1.2rem;
+}
+.d-box p{
+  color: var(--black);
+  font-size: 1rem;
+}
+.d-box{
+  background: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all .3s ease;
+   
+ 
+}
+.d-box img{
+   width: 19rem;
+  max-height: 19rem;
+}
+.d-box:hover{
+  background:#f9f9f9;
 }
