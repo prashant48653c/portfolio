@@ -56,7 +56,10 @@
    position: relative;
    width: 13rem;
    height: 13rem;
-
+transition: all .4s linear;
+ }
+ .profile-img:hover{
+  border: .6rem solid rgb(255, 190, 190);
  }
 
  .p-image {
@@ -230,31 +233,36 @@
  .d-box p {
    padding-top: .5rem;
    color: var(--grey);
-   font-size: .75rem;
+   font-size: .85rem;
 
  }
 
  .d-box {
-   background: var(--white);
-   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+   background: #fcffff;
    transition: all .3s ease;
    max-width: 25rem;
+   min-width: 20rem;
    padding: 1.5rem 1.5rem;
    overflow: hidden;
    height: fit-content;
    border-radius: 2rem;
    transform: all .4s ease;
-
+   transform: rotate(0deg);
  }
 
  .d-box:hover {
-   transform: rotate(3deg);
+ 
+box-shadow: none;
+transform: rotate(3deg);
  }
 
  .d-box img {
-   margin-top: .5rem;
+  border-radius: .4rem;
+   margin-top: .8rem;
    width: fit-content;
-   max-height: 19rem;
+   min-height: 10rem;
+
+   max-height: 10rem;
  }
 
  .d-box:hover {
@@ -328,9 +336,16 @@ border-top-right-radius: 7rem;
  .contact-box button{
   outline: none;
   border: none;
-  
+  transition: all .4s linear;
   padding: .3rem .7rem;
   background-color: #649dff;
+ }
+ .contact-box button:hover{
+  background-color: #3b7ff4;
+
+ }
+ button:active{
+  background-color: #161616;
  }
  .contact-box p{
   color: #635f5f;

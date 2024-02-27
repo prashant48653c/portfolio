@@ -86,7 +86,7 @@ const About = () => {
 
           <li>📱 Mobile app developer</li>
           <li>🧑 Coding Teacher</li>
-          <li>👉Available for projects/work</li>
+          <li>👉Available for projects</li>
 
 
 
