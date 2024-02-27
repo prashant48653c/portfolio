@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import About from './components/About'
 import Description from './components/Description'
+import Skill from './components/Skill'
+import Contact from './components/Contact'
  
  
 
@@ -16,6 +18,8 @@ function App() {
 
       <section className="description">
         <Description/>
+        <Skill/>
+        <Contact/>
       </section>
     </main>
     </>

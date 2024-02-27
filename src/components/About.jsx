@@ -52,14 +52,14 @@ const About = () => {
 
   return (
     <div className='myself'>
-      <div className="mode-btns">
+      {/* <div className="mode-btns">
         <button className='mode-btn' >🔥 Recruiter</button>
 
         <button  onClick={handleClient} className='mode-btn' >🌙 Client</button>
 
 
 
-      </div>
+      </div> */}
       <div className='profile-img' >
         {
           isSleep && <img className='p-image' src='https://media.tenor.com/ecfWy7xK3PsAAAAM/sleep-zzz.gif' alt='sleep mode' />
