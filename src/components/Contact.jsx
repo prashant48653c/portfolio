@@ -34,6 +34,14 @@ const Contact = () => {
             col:"#CDFADB",
 
         },
+        {
+          name:"www.leetcode.com",
+          link:" https://leetcode.com/acharyaprashant227/",
+          btn:"Check out",
+          img:"https://upload.wikimedia.org/wikipedia/commons/a/ab/LeetCode_logo_white_no_text.svg",
+          col:"#fffdd1",
+
+      },
 
 
 
