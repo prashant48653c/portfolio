@@ -67,7 +67,7 @@ const Skill = () => {
   ]
   return (
     <div className='d-boxs'>
-    <h4>🎯 Skills & Tools</h4>
+    <h4>🛠️ Skills & Tools</h4>
 
 
 <div className="skill-grid">

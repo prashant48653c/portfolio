@@ -1,6 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&display=swap');
-
-
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
  :root {
    --purple: #7988f4;
@@ -103,15 +103,22 @@ transition: all .4s linear;
 
  }
 
+ 
  .name h1 {
+  transition: all 1s linear;
+  
    padding-top: 1.5rem;
    color: var(--black);
    font-size: 2.4rem;
    font-family: "Inter";
-   font-weight: 700;
+   font-weight: 400;
    letter-spacing: -.1rem;
+height: 3rem;
+padding-bottom: 3rem;
 
-
+ }
+ .name h1:hover{
+  font-family: "Anta";
  }
 
  .name ul {
@@ -223,6 +230,12 @@ transition: all .4s linear;
    font-size: 1.3rem;
    margin: 2rem 0;
  }
+ .heading{
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+ }
 
  .d-box h6 {
    font-size: 1.2rem;
@@ -259,10 +272,10 @@ transform: rotate(3deg);
  .d-box img {
   border-radius: .4rem;
    margin-top: .8rem;
-   width: fit-content;
+   width: 100%;
    min-height: 10rem;
-
-   max-height: 10rem;
+max-height: 10rem;
+    
  }
 
  .d-box:hover {
@@ -290,7 +303,10 @@ transform: rotate(3deg);
   align-items: center;
  transition: all .4s linear;
  background-color: #f7f7ff;
+ 
  }
+ 
+
  .skill-box:hover{
   transform: scale(1.01);
 border-top-right-radius: 7rem;
@@ -320,7 +336,6 @@ border-top-right-radius: 7rem;
   height: 12.8rem;
   border-radius: 1.4rem;
   display: flex;
-  
   flex-direction: column;
   gap: .9rem;
   padding: 1.6rem;
@@ -356,3 +371,52 @@ border-top-right-radius: 7rem;
   color: white;
   font-weight: 500;
  }
+
+/* Job section  */
+.job-boxs{
+  display: flex;
+width: 100%;
+gap: 1rem;
+height: 20rem;
+ 
+}
+.job-list{
+ width: 30%;
+
+  list-style: none;
+}
+.job-list li{
+ 
+  padding: .5rem 1rem;
+  margin: .6rem ;
+   cursor: pointer;
+  background-color: #efeef8;
+  transition: all .2s linear;
+}
+.job-list li:hover{
+  background-color: #dfdef3;
+}
+ .job-desc{
+  width: 70%;
+  padding-left: 2rem;
+ }
+.job-profile h3{
+  font-size: 1.3rem;
+  margin-bottom: .4rem;
+}
+.job-profile p{
+  font-size: .8rem;
+}
+.job-profile{
+  margin-bottom: 1rem;
+}
+.job-desc-list{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  list-style: none;
+}
+.job-desc-list li{
+  font-family: "Poppins", sans-serif;
+ 
+}

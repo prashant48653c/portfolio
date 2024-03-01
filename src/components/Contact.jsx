@@ -20,7 +20,7 @@ const Contact = () => {
 
         {
             name:"www.instagram.com",
-            link:"https://github.com/prashant48653c",
+            link:"https://www.instagram.com/praxant28/",
             btn:"Follow",
             img:"https://www.logo.wine/a/logo/Instagram/Instagram-Logo.wine.svg",
             col:"#f2deda",
@@ -48,7 +48,7 @@ const Contact = () => {
     ]
   return (
     <div className='d-boxs'>
-    <h4>🎯 Get in touch</h4>
+    <h4>🚀 Get in touch</h4>
 
 
 <div className="contact-grid">

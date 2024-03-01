@@ -3,6 +3,7 @@ import About from './components/About'
 import Description from './components/Description'
 import Skill from './components/Skill'
 import Contact from './components/Contact'
+import Job from './components/Job'
  
  
 
@@ -18,6 +19,7 @@ function App() {
 
       <section className="description">
         <Description/>
+        <Job/>
         <Skill/>
         <Contact/>
       </section>
