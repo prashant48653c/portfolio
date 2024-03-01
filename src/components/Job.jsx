@@ -40,15 +40,15 @@ const [currentJob,setCurrentJob]=useState('reyansh')
   (
 <div className="job-desc">
         <div className="job-profile">
-            <h3>Software Engineer</h3>
+            <h3>🌍 Frontend Engineer</h3>
             <p className="date">2024 May - June</p>
         </div>
 
         <ul className="job-desc-list">
-<li>Worked on the front-end development in the web3 domain using Next.js, Alchemy, Tailwind CSS</li>
-<li>Implemented website design and enhanced interactivity.</li>
+<li>Utilized Tailwind and Bootstrap for styling</li>
+<li>Enhanced the UI while working with designers</li>
 <li>Conducted testing tasks to ensure website functionality and quality.</li>
-<li>Worked on the front-end development in the web3 domain using Next.js, Alchemy, Tailwind CSS,</li>
+<li>Implemented multiple frameworks for CSS</li>
         </ul>
        </div>
   )
