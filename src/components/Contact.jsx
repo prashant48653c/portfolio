@@ -55,7 +55,7 @@ const Contact = () => {
   {
     contacts.map((con,i)=>{
       return(
-<div style={{background:`${con.col}`}} className="contact-box">
+<div key={i} style={{background:`${con.col}`}} className="contact-box">
         <img src={con.img} alt="" />
         <p>{con.name}</p>
         <a href={con.link}>

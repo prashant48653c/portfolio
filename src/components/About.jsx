@@ -9,7 +9,7 @@ const About = () => {
   const [isSleep, setIsSleep] = useState(false);
   const [isClient, setIsClient] = useState(false)
   const [hour, setHour] = useState(false)
-
+  const [realImg,setRealImg]=useState(false)
   useEffect(() => {
     // Fetch the current hour in Nepal
     fetch('http://worldtimeapi.org/api/timezone/Asia/Kathmandu')
@@ -37,9 +37,9 @@ const About = () => {
       .catch(error => {
         console.error('Error fetching Nepal time:', error);
       });
-  }, []);
+  }, [realImg]);
  
- const [realImg,setRealImg]=useState(false)
+
  
  
   return (
