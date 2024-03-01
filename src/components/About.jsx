@@ -20,7 +20,7 @@ const About = () => {
         setHour(currentHour);
  
         // Determine the activity based on the current hour
-        if ((hour >= 6 && currentHour < 9) || (currentHour >= 18 && currentHour < 22)) {
+        if ((currentHour >= 6 && currentHour < 9) || (currentHour >= 18 && currentHour < 22)) {
           setIsActive(true);
           setIsStudy(false);
           setIsSleep(false);
