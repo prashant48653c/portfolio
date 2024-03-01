@@ -9,7 +9,7 @@ const About = () => {
   const [isSleep, setIsSleep] = useState(false);
   const [isClient, setIsClient] = useState(false)
   const [hour, setHour] = useState(false)
-  const [realImg,setRealImg]=useState(false)
+  const [realImg,setRealImg]=useState(true)
   useEffect(() => {
     // Fetch the current hour in Nepal
     fetch('http://worldtimeapi.org/api/timezone/Asia/Kathmandu')
@@ -20,7 +20,7 @@ const About = () => {
         setHour(currentHour);
  
         // Determine the activity based on the current hour
-        if ((currentHour >= 6 && currentHour < 9) || (currentHour >= 18 && currentHour < 22)) {
+        if ((hour >= 6 && currentHour < 9) || (currentHour >= 18 && currentHour < 22)) {
           setIsActive(true);
           setIsStudy(false);
           setIsSleep(false);
@@ -37,7 +37,7 @@ const About = () => {
       .catch(error => {
         console.error('Error fetching Nepal time:', error);
       });
-  }, [realImg]);
+  }, []);
  
 
  
