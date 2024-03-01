@@ -39,8 +39,8 @@ const About = () => {
       });
   }, []);
  
+ const [realImg,setRealImg]=useState(false)
  
-
  
   return (
     <div className='myself'>
@@ -52,15 +52,21 @@ const About = () => {
 
 
       </div> */}
-      <div className='profile-img' >
+      <div className='profile-img' onMouseEnter={()=>setRealImg(true)} onMouseLeave={()=>setRealImg(false)} >
         {
-          isSleep && <img className='p-image' src='https://media.tenor.com/ecfWy7xK3PsAAAAM/sleep-zzz.gif' alt='sleep mode' />
+           realImg &&  <img className='p-image' src='https://scontent.fpkr1-1.fna.fbcdn.net/v/t39.30808-1/386207742_1375566223034219_6874647668499209372_n.jpg?stp=c0.33.160.160a_dst-jpg_p160x160&_nc_cat=101&ccb=1-7&_nc_sid=5740b7&_nc_ohc=E0YgrQx-s8sAX_yB_96&_nc_oc=AQmPdEvruqZTAYq4jAVNaLrRMCBEz5a3jpXSHmAkmIOVPwNh9YxGdW2_PjS69OCal-U0sVBZEDlVqZIK9lMWuajY&_nc_ht=scontent.fpkr1-1.fna&oh=00_AfB9qAg8fkeTysZrPV1WIn3lmrgLIxoVDxFF7r-Q4pZ6hg&oe=65E66231' alt='sleep mode' />
         }
         {
-          isActive && <img className='p-image' src="https://i.pinimg.com/originals/38/a0/ef/38a0eff19955310e41a4d54dc1dd1838.gif" alt="" />
+
+       
+          isSleep && <img style={{ display: realImg ? "none" : "block" }}   className='p-image' src='https://media.tenor.com/ecfWy7xK3PsAAAAM/sleep-zzz.gif' alt='sleep mode' />
         }
         {
-          isStudy && <img className='p-image' src='https://i.pinimg.com/originals/b6/39/25/b63925166998c85d8b06f190c47c0e02.gif' />
+       isActive && <img style={{ display: realImg ? "none" : "block" }} className='p-image' src="https://i.pinimg.com/originals/38/a0/ef/38a0eff19955310e41a4d54dc1dd1838.gif" alt="" />
+
+        }
+        {
+          isStudy && <img style={{ display: realImg ? "none" : "block" }}  className='p-image' src='https://i.pinimg.com/originals/b6/39/25/b63925166998c85d8b06f190c47c0e02.gif' />
         }
 
         <div style={{
