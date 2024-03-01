@@ -59,14 +59,14 @@ const About = () => {
         {
 
        
-          isSleep && <img style={{ display: realImg ? "none" : "block" }}   className='p-image' src='https://media.tenor.com/ecfWy7xK3PsAAAAM/sleep-zzz.gif' alt='sleep mode' />
+          isSleep && <img style={{ display: realImg && "none" }}   className='p-image' src='https://media.tenor.com/ecfWy7xK3PsAAAAM/sleep-zzz.gif' alt='sleep mode' />
         }
         {
-       isActive && <img style={{ display: realImg ? "none" : "block" }} className='p-image' src="https://i.pinimg.com/originals/38/a0/ef/38a0eff19955310e41a4d54dc1dd1838.gif" alt="" />
+       isActive && <img style={{ display: realImg && "none" }} className='p-image' src="https://i.pinimg.com/originals/38/a0/ef/38a0eff19955310e41a4d54dc1dd1838.gif" alt="" />
 
         }
         {
-          isStudy && <img style={{ display: realImg ? "none" : "block" }}  className='p-image' src='https://i.pinimg.com/originals/b6/39/25/b63925166998c85d8b06f190c47c0e02.gif' />
+          isStudy && <img style={{ display: realImg && "none"  }}  className='p-image' src='https://i.pinimg.com/originals/b6/39/25/b63925166998c85d8b06f190c47c0e02.gif' />
         }
 
         <div style={{
