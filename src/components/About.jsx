@@ -40,7 +40,7 @@ const About = () => {
   }, []);
  
 
- 
+ console.log(hour)
  
   return (
     <div className='myself'>
@@ -82,7 +82,7 @@ const About = () => {
 
           <li>📱 Mobile app developer</li>
           <li>🧑 Coding Teacher</li>
-          <li>👉Available for projects</li>
+          <li>👉 Available for projects</li>
 
 
 
