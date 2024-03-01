@@ -1,6 +1,6 @@
  
 import React, { useState, useEffect } from 'react';
- 
+ import axios from 'axios'
 
 const About = () => {
 
@@ -11,32 +11,30 @@ const About = () => {
   const [hour, setHour] = useState(false)
   const [realImg,setRealImg]=useState(true)
   useEffect(() => {
-    // Fetch the current hour in Nepal
-    fetch('http://worldtimeapi.org/api/timezone/Asia/Kathmandu')
-      .then(response => response.json())
-      .then(data => {
-        // Extract current hour from datetime string
-        const currentHour = parseInt(data.datetime.slice(11, 13));
-        setHour(currentHour);
- 
-        // Determine the activity based on the current hour
-        if ((currentHour >= 6 && currentHour < 9) || (currentHour >= 18 && currentHour < 22)) {
-          setIsActive(true);
-          setIsStudy(false);
-          setIsSleep(false);
-        } else if (currentHour >= 9 && currentHour < 18) {
-          setIsActive(false);
-          setIsStudy(true);
-          setIsSleep(false);
-        } else {
-          setIsActive(false);
-          setIsStudy(false);
-          setIsSleep(true);
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching Nepal time:', error);
-      });
+     // Fetch the current time in Nepal from WorldTimeAPI
+     axios.get('http://worldtimeapi.org/api/timezone/Asia/Kathmandu')
+     .then(response => {
+       const currentHour = parseInt(response.data.datetime.slice(11, 13));
+       setHour(currentHour);
+
+       // Determine the activity based on the current hour
+       if ((currentHour >= 6 && currentHour < 9) || (currentHour >= 18 && currentHour < 22)) {
+         setIsActive(true);
+         setIsStudy(false);
+         setIsSleep(false);
+       } else if (currentHour >= 9 && currentHour < 18) {
+         setIsActive(false);
+         setIsStudy(true);
+         setIsSleep(false);
+       } else {
+         setIsActive(false);
+         setIsStudy(false);
+         setIsSleep(true);
+       }
+     })
+     .catch(error => {
+       console.error('Error fetching Nepal time:', error);
+     });
   }, []);
  
 
