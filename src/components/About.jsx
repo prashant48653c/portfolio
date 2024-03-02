@@ -41,7 +41,7 @@ const About = () => {
  console.log(hour)
  
   return (
-    <div className='myself' onMouseEnter={()=>setRealImg(true) }  onMouseLeave={()=>setRealImg(false)} >
+    <div className='myself'>
       {/* <div className="mode-btns">
         <button className='mode-btn' >🔥 Recruiter</button>
 
@@ -50,7 +50,7 @@ const About = () => {
 
 
       </div> */}
-      <div className='profile-img' onMouseEnter={()=>setRealImg(true)} onMouseLeave={()=>setRealImg(false)} >
+      <div className='profile-img'  onMouseEnter={()=>setRealImg(true)} onMouseLeave={()=>setRealImg(false)} >
       
 
       {
