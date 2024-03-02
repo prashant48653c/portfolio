@@ -41,7 +41,7 @@ const About = () => {
  console.log(hour)
  
   return (
-    <div className='myself'>
+    <div className='myself' onMouseEnter={()=>setRealImg(true) }  onMouseLeave={()=>setRealImg(false)} >
       {/* <div className="mode-btns">
         <button className='mode-btn' >🔥 Recruiter</button>
 
@@ -50,19 +50,24 @@ const About = () => {
 
 
       </div> */}
-      <div className='profile-img' >
+      <div className='profile-img' onMouseEnter={()=>setRealImg(true)} onMouseLeave={()=>setRealImg(false)} >
       
+
+      {
+       realImg && <img className='p-image' style={{minWidth:"100%",objectFit:"cover" }} src="https://scontent.fpkr1-1.fna.fbcdn.net/v/t39.30808-6/386207742_1375566223034219_6874647668499209372_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=HOV_QuZE-SgAX_2EnIV&_nc_oc=AQl6nfJtRkkkE9BJ6MOK2Jhtr8crX00c_1Yg2KsM8O0YbRCp0PWRhfLVfoxHoGJCO0pGNBh3ms5922OxaDLPQguB&_nc_ht=scontent.fpkr1-1.fna&oh=00_AfDxra2CujsEPHn2z0dE0xIUnq1TdKz-3VOoQfaL5K2FKg&oe=65E6DEB3" alt="" />
+
+        }
         {
 
        
-          isSleep && <img className='p-image' src='https://media.tenor.com/ecfWy7xK3PsAAAAM/sleep-zzz.gif' alt='sleep mode' />
+         ( isSleep && realImg ==false) && <img className='p-image' src='https://media.tenor.com/ecfWy7xK3PsAAAAM/sleep-zzz.gif' alt='sleep mode' />
         }
         {
-       isActive && <img  className='p-image' src="https://i.pinimg.com/originals/38/a0/ef/38a0eff19955310e41a4d54dc1dd1838.gif" alt="" />
+       (isActive && realImg == false) && <img  className='p-image' src="https://i.pinimg.com/originals/38/a0/ef/38a0eff19955310e41a4d54dc1dd1838.gif" alt="" />
 
         }
         {
-          isStudy && <img  className='p-image' src='https://i.pinimg.com/originals/b6/39/25/b63925166998c85d8b06f190c47c0e02.gif' />
+         ( isStudy && realImg ==false) && <img  className='p-image' src='https://i.pinimg.com/originals/b6/39/25/b63925166998c85d8b06f190c47c0e02.gif' />
         }
 
         <div style={{
