@@ -12,7 +12,7 @@ const About = () => {
   const [realImg,setRealImg]=useState(true)
   useEffect(() => {
      // Fetch the current time in Nepal from WorldTimeAPI
-     axios.get('http://worldtimeapi.org/api/timezone/Asia/Kathmandu')
+     axios.get('https://worldtimeapi.org/api/timezone/Asia/Kathmandu')
      .then(response => {
        const currentHour = parseInt(response.data.datetime.slice(11, 13));
        setHour(currentHour);
