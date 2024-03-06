@@ -60,8 +60,8 @@ const Skill = () => {
       img:"https://cdn.worldvectorlogo.com/logos/material-ui-1.svg",
      
     },{
-      name:"Vite",
-      img:"/vite.svg",
+      name:"Expo",
+      img:"https://www.vectorlogo.zone/logos/expoio/expoio-icon.svg",
      
     },
   ]

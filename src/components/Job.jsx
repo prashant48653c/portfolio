@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Job = () => {
 
-const [currentJob,setCurrentJob]=useState('reyansh')
+const [currentJob,setCurrentJob]=useState('Froker')
  
   return (
     <>
