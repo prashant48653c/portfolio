@@ -58,7 +58,7 @@ const Contact = () => {
 <div key={i} style={{background:`${con.col}`}} className="contact-box">
         <img src={con.img} alt="" />
         <p>{con.name}</p>
-        <a href={con.link}>
+        <a target='_blank' href={con.link}>
         <button>{con.btn}</button></a>
       </div>
       )

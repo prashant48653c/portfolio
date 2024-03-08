@@ -92,7 +92,7 @@ const About = () => {
         </ul>
 
         <div>
-          <button className="btn"><a style={{textDecoration:"none",color:"white"}} href="mailto:acharyaprashant227@gmail.com">Hire me</a></button>
+          <button className="btn"><a style={{textDecoration:"none",color:"white"}} target='_blank' href="mailto:acharyaprashant227@gmail.com">Hire me</a></button>
           <button className="btn-resume"><a style={{color:"white"}}  href="https://drive.google.com/file/d/1v7x5Vmk5Lq0Ar0t8DPrQyi0j6ArksS_W/view" target='_blank' >Resume</a></button>
 
         </div>

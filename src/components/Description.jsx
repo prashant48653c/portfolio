@@ -31,7 +31,8 @@ const Description = () => {
       name:"DayThought 💡",
       desc:"A full stack blog application utiliizing MERN that enables to write and connect your thoughts",
       img:"/day.png",
-      time:"May-June"
+      time:"May-June",
+      link:"https://github.com/prashant48653c/DayThought"
 
     },
   ]

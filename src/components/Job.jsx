@@ -20,7 +20,7 @@ const [currentJob,setCurrentJob]=useState('Froker')
  (
   <div className="job-desc">
   <div className="job-profile">
-      <h3>🌐 Web Developer <span> <a style={{fontSize:"1rem",color:"grey"}} href="https://www.froker.in/">@Froker</a></span></h3>
+      <h3>🌐 Web Developer <span> <a style={{fontSize:"1rem",color:"grey"}} href="https://www.froker.in/" target='_blank' >@Froker</a></span></h3>
       <p className="date">2024 January - Present</p>
   </div>
 
