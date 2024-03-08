@@ -41,13 +41,13 @@ const [currentJob,setCurrentJob]=useState('Froker')
 <div className="job-desc">
         <div className="job-profile">
             <h3>🌍 Frontend Engineer</h3>
-            <p className="date">2024 May - June</p>
+            <p className="date">2023 May - September</p>
         </div>
 
         <ul className="job-desc-list">
 <li>Utilized Tailwind and Bootstrap for styling</li>
 <li>Enhanced the UI while working with designers</li>
-<li>Conducted testing tasks to ensure website functionality and quality.</li>
+<li>Organized and learnt SEO optimization</li>
 <li>Implemented multiple frameworks for CSS</li>
         </ul>
        </div>

@@ -9,30 +9,29 @@ const Description = () => {
       desc:"GuffSuff is a real-time messaging website built with the MERN stack and Socket io.",
       img:"https://t4.ftcdn.net/jpg/05/11/87/37/360_F_511873784_NLmIMOcuwo9JTuoXJNyR0jQSQOUXUvFk.jpg",
       link:"https://gufsuff.netlify.app/",
-      time:"May June"
+      time:"Aug-Sep"
     },
     {
       name:"Streamzone 🎬",
       desc:"A video streaming application built with React utilizing YouTube API",
       img:"https://stripe-camo.global.ssl.fastly.net/461f0b7deb2d032b33e1885dc64b8c36a58093617db119cd526def5058df919d/68747470733a2f2f66696c65732e7374726970652e636f6d2f6c696e6b732f4d44423859574e6a64463878546c51795232464d4f556c334f584a5959324a6166475a735833526c63335266646c464453586b344d57643255545a574d6e5246636e64705a324643576b526f30307264686166444474",
       link:"https://streamzone25.netlify.app/",
-      time:"May June"
+      time:"Jan-Feb"
 
     },
     {
       name:"DexGame 🎮",
       desc:"Built under React, a game distribution application powered by RAWG API",
-      img:"https://creatorspace.imgix.net/sites/ogimages/aHR0cHM6Ly9taXJvLm1lZGl1bS5jb20vdjIvcmVzaXplOmZpdDoxMjAwLzEqUmNJLWdobUhoLVBjNEpERGVua01BZy5qcGVn.jpeg?width=600&height=600",
+      img:"/dex.png",
       link:"https://dexgame.netlify.app/",
-      time:"May June"
+      time:"March-April"
 
     },
     {
       name:"DayThought 💡",
       desc:"A full stack blog application utiliizing MERN that enables to write and connect your thoughts",
-      img:"https://creatorspace.imgix.net/sites/ogimages/aHR0cHM6Ly9taXJvLm1lZGl1bS5jb20vdjIvcmVzaXplOmZpdDoxMjAwLzEqUmNJLWdobUhoLVBjNEpERGVua01BZy5qcGVn.jpeg?width=600&height=600",
-      link:"https://github.com/prashant48653c/DayThought",
-      time:"May June"
+      img:"/day.png",
+      time:"May-June"
 
     },
   ]
