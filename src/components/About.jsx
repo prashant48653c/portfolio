@@ -54,7 +54,7 @@ const About = () => {
       
 
       {
-       realImg && <img   className='p-image' style={{minWidth:"100%",objectFit:"cover" }} src="/pp.jpg" alt="" />
+       realImg && <img   className='p-image' style={{minWidth:"100%",objectFit:"cover" }} src="/pp.png" alt="" />
 
         }
         {
@@ -84,7 +84,7 @@ const About = () => {
           <li>💻 Web developer</li>
 
           <li>📱 Mobile app developer</li>
-          <li>🧑 Coding Teacher</li>
+          <li>🧑 Coding Tutor</li>
           <li>👉 Available for projects</li>
 
 
@@ -92,9 +92,11 @@ const About = () => {
         </ul>
 
         <div>
-          <button className="btn"><a style={{textDecoration:"none",color:"white"}} target='_blank' href="mailto:acharyaprashant227@gmail.com">Hire me</a></button>
+          <button className="btn"><a style={{textDecoration:"none",color:"white"}} target='_blank' href='https://sincere-meadow-26a.notion.site/More-Projects-11290e2109ac8078ba28d170667fcffd'>More</a></button>
+
           <button className="btn-resume"><a style={{color:"white"}}  href="https://drive.google.com/file/d/1v7x5Vmk5Lq0Ar0t8DPrQyi0j6ArksS_W/view" target='_blank' >Resume</a></button>
 
+         
         </div>
       </div>
     </div>
