@@ -162,6 +162,9 @@ padding-bottom: 3rem;
    background-color: #8892de;
    padding: .6rem 1.8rem;
  }
+ .active{
+  background-color: #cf8b8b;
+ }
 
  .about-section {
    padding-top: 2rem;
