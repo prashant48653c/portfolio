@@ -1,5 +1,5 @@
  
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
  import axios from 'axios'
 
 const About = () => {
@@ -7,14 +7,14 @@ const About = () => {
   const [isActive, setIsActive] = useState(false);
   const [isStudy, setIsStudy] = useState(false);
   const [isSleep, setIsSleep] = useState(false);
-  const [isClient, setIsClient] = useState(false)
+  
   const [hour, setHour] = useState(false)
   const [realImg,setRealImg]=useState(false)
   useEffect(() => {
      // Fetch the current time in Nepal from WorldTimeAPI
-     axios.get('https://worldtimeapi.org/api/timezone/Asia/Kathmandu')
+     axios.get('https://timeapi.io/api/Time/current/zone?timeZone=Asia/Kathmandu')
      .then(response => {
-       const currentHour = parseInt(response.data.datetime.slice(11, 13));
+       const currentHour = parseInt(response.data.dateTime.slice(11, 13));
        setHour(currentHour);
 
        // Determine the activity based on the current hour
@@ -37,8 +37,7 @@ const About = () => {
      });
   }, []);
  
-
- console.log(hour)
+ 
  
   return (
     <div className='myself'>
@@ -63,11 +62,11 @@ const About = () => {
          ( isSleep && realImg ==false) && <img  className='p-image' src='https://media.tenor.com/ecfWy7xK3PsAAAAM/sleep-zzz.gif' alt='sleep mode' />
         }
         {
-       (isActive && realImg == false) && <img className='p-image' src="https://i.pinimg.com/originals/38/a0/ef/38a0eff19955310e41a4d54dc1dd1838.gif" alt="" />
+       (isActive && realImg == false) && <img className='p-image' src="https://i.pinimg.com/originals/38/a0/ef/38a0eff19955310e41a4d54dc1dd1838.gif" alt="Ready to work" />
 
         }
         {
-         ( isStudy && realImg ==false) && <img  className='p-image' src='https://i.pinimg.com/originals/b6/39/25/b63925166998c85d8b06f190c47c0e02.gif' />
+         ( isStudy && realImg ==false) && <img alt='Studing'  className='p-image' src='https://i.pinimg.com/originals/b6/39/25/b63925166998c85d8b06f190c47c0e02.gif' />
         }
 
         <div style={{

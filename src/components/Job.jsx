@@ -1,37 +1,54 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const Job = () => {
-  const [currentJob, setCurrentJob] = useState('Froker');
+  const [currentJob, setCurrentJob] = useState("Froker");
 
   return (
     <>
-      <h4 className='heading'>💼 Experience</h4>
+      <h4 className="heading">💼 Experience</h4>
       <div className="d-boxs job-boxs">
         <ul className="job-list">
-          <li 
-            onClick={() => setCurrentJob("Froker")} 
-            className={currentJob === 'Froker' ? 'active' : ''}>
+          <li
+            onClick={() => setCurrentJob("energy")}
+            className={currentJob === "energy" ? "active" : ""}
+          >
+            Technergy Solutions
+          </li>
+
+          <li
+            onClick={() => setCurrentJob("shrig")}
+            className={currentJob === "shrig" ? "active" : ""}
+          >
+            Shrig Solutions
+          </li>
+
+          <li
+            onClick={() => setCurrentJob("Froker")}
+            className={currentJob === "Froker" ? "active" : ""}
+          >
             Froker
           </li>
-          <li 
-            onClick={() => setCurrentJob("reyansh")} 
-            className={currentJob === 'reyansh' ? 'active' : ''}>
+          <li
+            onClick={() => setCurrentJob("reyansh")}
+            className={currentJob === "reyansh" ? "active" : ""}
+          >
             Reyansh Infosys
-          </li>
-          <li 
-            onClick={() => setCurrentJob("shrig")} 
-            className={currentJob === 'shrig' ? 'active' : ''}>
-            Shrig Solutions
           </li>
         </ul>
 
-        {currentJob === 'Froker' && (
+        {currentJob === "Froker" && (
           <div className="job-desc">
             <div className="job-profile">
-              <h3>🌐 Web Developer 
-                <span> 
-                  <a style={{ fontSize: "1rem", color: "grey" }} href="https://www.froker.in/" target='_blank' rel="noopener noreferrer">
-                    @Froker
+              <h3>
+                🌐 Web Developer
+                <span>
+                  <a
+                    style={{ fontSize: "1rem", color: "grey" }}
+                    href="https://www.froker.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i> </i> @Froker
                   </a>
                 </span>
               </h3>
@@ -46,10 +63,10 @@ const Job = () => {
           </div>
         )}
 
-        {currentJob === 'reyansh' && (
+        {currentJob === "reyansh" && (
           <div className="job-desc">
             <div className="job-profile">
-              <h3>🌍 Frontend Engineer</h3>
+              <h3>🙅‍♂️ Frontend Engineer</h3>
               <p className="date">2023 May - September</p>
             </div>
             <ul className="job-desc-list">
@@ -61,14 +78,56 @@ const Job = () => {
           </div>
         )}
 
-        {currentJob === 'shrig' && (
+        {currentJob === "shrig" && (
           <div className="job-desc">
             <div className="job-profile">
-              <h3>🌍 Full Stack Developer</h3>
+              <h3>
+                🌍 Full Stack Developer
+                <span>
+                  <a
+                    style={{ fontSize: "1rem", color: "grey" }}
+                    href="https://shrigsolutions.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i> </i>
+                    @Shrig
+                  </a>
+                </span>
+              </h3>
               <p className="date">2024 Jan - June</p>
             </div>
-            <ul className="job-desc-list">  
+            <ul className="job-desc-list">
               <li>Utilized Nest Js for structured backend</li>
+              <li>Implemented access and refresh token for authentication</li>
+              <li>Used Cloudinary for image upload and optimization</li>
+              <li>Optimized database with aggregation pipeline</li>
+            </ul>
+          </div>
+        )}
+
+        {currentJob === "energy" && (
+          <div className="job-desc">
+            <div className="job-profile">
+              <h3>
+                {" "}
+                💻 Full Stack Developer
+                <i> </i>
+                <span>
+                  <a
+                    style={{ fontSize: "1rem", color: "grey" }}
+                    href="https://technergy.com.np/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @Technergy
+                  </a>
+                </span>
+              </h3>
+              <p className="date">2025 Jan - Present</p>
+            </div>
+            <ul className="job-desc-list">
+              <li>Performed internalization with next i18n</li>
               <li>Implemented access and refresh token for authentication</li>
               <li>Used Cloudinary for image upload and optimization</li>
               <li>Optimized database with aggregation pipeline</li>
