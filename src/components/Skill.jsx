@@ -58,7 +58,7 @@ const Skill = () => {
     },
     {
       name: "NestJs",
-      img: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nest-js-icon.png",
+      img: "https://static.cdnlogo.com/logos/n/57/nestjs.svg",
     },
   ];
   return (
@@ -69,7 +69,7 @@ const Skill = () => {
         {skills.map((skill, i) => {
           return (
             <div title={skill.name} key={i} className="skill-box">
-              <img src={skill.img} alt="" />
+              <img src={skill.img} alt={skill.name} />
             </div>
           );
         })}
